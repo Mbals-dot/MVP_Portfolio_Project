@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderMate Sign Up</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <!-- Top Header -->
+    <div class="top-header">
+      <h1 class="top-header-text">WanderMate</h1>
+    </div>
+
+    <!-- Sign-up Form -->
+    <div class="signup-container">
+      <div class="signup-card">
+        <h2 class="signup-header">Sign Up for WanderMate</h2>
+        <form id="signup-form">
+          <div class="form-field">
+            <label for="name" class="label">Name</label>
+            <input type="text" id="name" name="name" class="input" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="password" class="label">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="input"
+              required
+            />
+          </div>
+
+          <button type="submit" class="submit-button">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

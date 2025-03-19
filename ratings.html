@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderMate Ratings</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <!-- Top Header -->
+    <div class="top-header">
+      <h1 class="top-header-text">WanderMate</h1>
+    </div>
+
+    <!-- Ratings Section -->
+    <div class="ratings-container">
+      <div class="ratings-card">
+        <h2 class="ratings-header">Rate Your Experience with WanderMate</h2>
+
+        <form id="ratings-form">
+          <div class="ratings-field">
+            <label for="rating" class="label">Rating</label>
+            <div id="rating" class="stars">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="comments" class="label">Your Comments</label>
+            <textarea
+              id="comments"
+              name="comments"
+              class="input"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">Submit Rating</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

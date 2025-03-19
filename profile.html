@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderMate Profile</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <!-- Top Header -->
+    <div class="top-header">
+      <h1 class="top-header-text">WanderMate</h1>
+    </div>
+
+    <!-- Profile Page -->
+    <div class="profile-container">
+      <div class="profile-card">
+        <h2 class="profile-header">Your Profile</h2>
+
+        <form id="profile-form">
+          <div class="form-field">
+            <label for="name" class="label">Name</label>
+            <input type="text" id="name" name="name" class="input" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="bio" class="label">Bio</label>
+            <textarea
+              id="bio"
+              name="bio"
+              class="input"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="profile-picture" class="label">Profile Picture</label>
+            <input
+              type="file"
+              id="profile-picture"
+              name="profile-picture"
+              class="input"
+            />
+          </div>
+          <div class="form-field">
+            <label for="name" class="label">Sexuality</label>
+            <input type="text" id="sex" name="sex" class="input" required />
+          </div>
+          <div class="form-field">
+            <label for="name" class="label">Interested in</label>
+            <input
+              type="text"
+              id="interest"
+              name="interest"
+              class="input"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="name" class="label">Looking for</label>
+            <input
+              type="text"
+              id="looking"
+              name="looking"
+              class="input"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="name" class="label">Activity level</label>
+            <input type="text" id="level" name="level" class="input" required />
+          </div>
+
+          <button type="submit" class="submit-button">Save Profile</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
