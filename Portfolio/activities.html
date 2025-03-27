@@ -3,111 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WanderMate Activities</title>
-
-    <link rel="stylesheet" href="src/styles.css" />
+    <title>Discover - WanderMate</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Top Header -->
-    <div class="top-header">
-      <h1 class="top-header-text">WanderMate</h1>
-      <h2 class="mid-header-text">Your travel companion</h2>
-      <p class="mid-header-text">
-        Where would you like to meet your next companion?
-      </p>
-    </div>
+    <header class="header">
+      <h1 class="logo">WanderMate</h1>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+      </nav>
+    </header>
 
-    <!-- Activities Page -->
-    <div class="activities-container">
-      <div class="activities-card">
-        <h2 class="activities-header">Choose Your Activity</h2>
+    <div class="main-content">
+      <h2>Discover Amazing Hangout Spots</h2>
 
-        <div class="activity-sections">
-          <!-- Group Fitness -->
-          <section class="activity-section">
-            <h3>Group Fitness Classes</h3>
-            <ul>
-              <li>Yoga</li>
-              <li>Pilates</li>
-              <li>Zumba</li>
-              <li>Running Clubs</li>
-            </ul>
-          </section>
-
-          <!-- Volunteer Work -->
-          <section class="activity-section">
-            <h3>Volunteer Work</h3>
-            <ul>
-              <li>Charity Events</li>
-              <li>Animal Shelter</li>
-              <li>Environmental Initiatives</li>
-            </ul>
-          </section>
-
-          <!-- Outdoor Activities -->
-          <section class="activity-section">
-            <h3>Outdoor Activities</h3>
-            <ul>
-              <li>Hiking</li>
-              <li>Nature Walks</li>
-              <li>Beach Gatherings</li>
-              <li>Park Meetups</li>
-            </ul>
-          </section>
-
-          <!-- Sports Leagues -->
-          <section class="activity-section">
-            <h3>Sports Leagues</h3>
-            <ul>
-              <li>Basketball</li>
-              <li>Soccer</li>
-              <li>Volleyball</li>
-              <li>Tennis</li>
-            </ul>
-          </section>
-
-          <!-- Classes and Workshops -->
-          <section class="activity-section">
-            <h3>Classes and Workshops</h3>
-            <ul>
-              <li>Cooking Classes</li>
-              <li>Dance Classes</li>
-              <li>Art and Craft Workshops</li>
-            </ul>
-          </section>
-
-          <!-- Social Meetups -->
-          <section class="activity-section">
-            <h3>Social Meetups</h3>
-            <ul>
-              <li>Trivia Nights</li>
-              <li>Board Game Nights</li>
-              <li>Book Clubs</li>
-            </ul>
-          </section>
-
-          <!-- Music Events -->
-          <section class="activity-section">
-            <h3>Music Events</h3>
-            <ul>
-              <li>Concerts</li>
-              <li>Festivals</li>
-              <li>Karaoke Nights</li>
-            </ul>
-          </section>
-
-          <!-- Language Exchange -->
-          <section class="activity-section">
-            <h3>Language Exchange</h3>
-            <ul>
-              <li>Language Exchange Groups</li>
-              <li>Cultural Festivals</li>
-            </ul>
-          </section>
+      <!-- Search bar and category filters -->
+      <div class="filters">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for places..."
+          class="search-bar"
+        />
+        <button onclick="searchPlaces()">Search</button>
+        <div class="category-filters">
+          <label for="category">Category: </label>
+          <select id="category" onchange="filterByCategory()">
+            <option value="">All</option>
+            <option value="beach">Beach</option>
+            <option value="mountain">Mountain</option>
+            <option value="park">Park</option>
+          </select>
         </div>
       </div>
-    </div>
 
-    <script src="src/script.js"></script>
+      <!-- Place Cards Container -->
+      <div id="places-container" class="places-container">
+        <!-- Place cards will be added here dynamically -->
+      </div>
+    </div>
+    <div id="map" style="height: 400px; width: 100%"></div>
+
+    <footer class="footer">
+      <p>&copy; 2025 WanderMate. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7VaYQafwhjp4SklaMzH42PcRLgt7lPEo&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
