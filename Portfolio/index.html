@@ -3,52 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WanderMate Sign Up</title>
-    <link rel="stylesheet" href="src/styles.css" />
+    <title>Home - WanderMate</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Top Header -->
-    <div class="top-header">
-      <h1 class="top-header-text">WanderMate</h1>
+    <header class="header">
+      <h1 class="logo">WanderMate</h1>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <h2>Welcome to WanderMate!</h2>
+      <p>
+        WanderMate helps you find amazing hangout spots and activities based on
+        your preferences. Start exploring new adventures today!
+      </p>
+
+      <section class="featured">
+        <h3>Featured Locations</h3>
+        <div class="featured-places">
+          <div class="place-card">
+            <img
+              src="https://gardenandgun.com/wp-content/uploads/2024/02/Atlantic-Beach_Terry-Ward-1600x1200.jpg"
+              alt="Place"
+            />
+            <h4>Sunny Beach</h4>
+            <p>A relaxing beach with stunning views.</p>
+          </div>
+          <div class="place-card">
+            <img
+              src="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg?w=300"
+              alt="Place"
+            />
+            <h4>Mountain Adventure</h4>
+            <p>Beautiful mountain trails for hiking.</p>
+          </div>
+          <div class="place-card">
+            <img
+              src="https://www.howler.co.za/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOVVNQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--680ec2359129d170bf259235c86a2b469781966b/WhatsApp%20Image%202025-01-31%20at%2012.33.23.jpeg"
+              alt="Place"
+            />
+            <h4>Mountain Adventure</h4>
+            <p>Beautiful mountain trails for hiking.</p>
+          </div>
+          <div class="place-card">
+            <img
+              src="https://www.howler.co.za/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOVVNQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--680ec2359129d170bf259235c86a2b469781966b/WhatsApp%20Image%202025-01-31%20at%2012.33.23.jpeg"
+              alt="Place"
+            />
+            <h4>Events</h4>
+            <p>Beautiful mountain trails for hiking.</p>
+          </div>
+          <div class="place-card">
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipMBmRgQxVAxSOgV8QegljqUxO7kxQdFP2-jGqA=s1360-w1360-h1020"
+              alt="Place"
+            />
+            <h4>Resturants</h4>
+            <p>Beautiful mountain trails for hiking.</p>
+          </div>
+        </div>
+      </section>
+
+      <a href="discover.html" class="cta-btn">Discover More Places</a>
     </div>
 
-    <!-- Sign-up Form -->
-    <div class="signup-container">
-      <div class="signup-card">
-        <h2 class="signup-header">Sign Up for WanderMate</h2>
-        <form id="signup-form">
-          <div class="form-field">
-            <label for="name" class="label">Name</label>
-            <input type="text" id="name" name="name" class="input" required />
-          </div>
+    <footer class="footer">
+      <p>&copy; 2025 WanderMate. All rights reserved.</p>
+    </footer>
 
-          <div class="form-field">
-            <label for="email" class="label">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="input"
-              required
-            />
-          </div>
-
-          <div class="form-field">
-            <label for="password" class="label">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              class="input"
-              required
-            />
-          </div>
-
-          <button type="submit" class="submit-button">Sign Up</button>
-        </form>
-      </div>
-    </div>
-
-    <script src="src/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
